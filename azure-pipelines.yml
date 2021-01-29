@@ -31,9 +31,9 @@ steps:
     publishLocation: 'Container'
 - task: PublishCodeCoverageResults@1
   inputs:
-    #codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
+    codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
     summaryFileLocation: 
-    #pathToSources: # Optional
+    pathToSources: # Optional
     #reportDirectory: # Optional
     #additionalCodeCoverageFiles: # Optional
     #failIfCoverageEmpty: false # Optiona
