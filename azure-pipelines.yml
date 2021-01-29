@@ -31,12 +31,5 @@ steps:
     publishLocation: 'Container'
 - task: PublishCodeCoverageResults@1
   inputs:
-    codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml'
-    #pathToSources: # Optional
-    #reportDirectory: # Optional
-    #additionalCodeCoverageFiles: # Optional
-    #failIfCoverageEmpty: false # Optiona
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'test'
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: 'Testomg'
